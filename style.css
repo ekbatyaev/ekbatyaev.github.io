@@ -1,0 +1,103 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #8B4513;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #FFEBCD;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.main_title {
+    color: #5C3317;
+    font-family: "Apple Chancery", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-style: italic;
+    font-size: 18px;
+    color: #5C3317;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #5C3317;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    color: #5C3317; /* тёплый коричневый */
+    font-weight: 600;
+    padding: 10px 22px;
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    background-color: #8B4513;
+    color: #FFEBCD;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.link:active {
+    transform: translateY(0);
+}
+
+.welcome {
+    background: rgba(255, 235, 205, 0.8); /* слегка прозрачный бежевый */
+    border-left: 5px solid #8B4513;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.welcome h2 {
+    margin-top: 0;
+    color: #5C3317;
+}
+
+.welcome ul {
+    padding-left: 20px;
+}
+
+.welcome li {
+    margin-bottom: 8px;
+}
+
+.hashtags {
+    margin: 10px 0;
+}
+
+.hashtags span {
+    display: inline-block;
+    background: #8B4513;
+    color: #FFEBCD;
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin: 3px;
+    font-size: 14px;
+}
+
+.inline-link {
+    color: #8B4513;
+    font-weight: bold;
+    text-decoration: underline;
+}
