@@ -78,4 +78,28 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.backgroundColor === 'lightcyan' ?
                 '#f0f0f0' : 'lightcyan';
     });
+
+    // Анимация для навигационных ссылок
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1)';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+        });
+    });
+    
+    // Анимация для ссылок
+    const links = document.querySelectorAll('.link');
+    links.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            this.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.2)';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+            this.style.boxShadow = 'none';
+        });
+    });
 });
