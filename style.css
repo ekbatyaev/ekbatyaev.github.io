@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Chalkboard", sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #8B4513;
@@ -54,9 +54,19 @@ nav a:hover, nav a.active {
 
 .main_title {
     color: #1e1006;
-    font-family: "Apple Chancery", sans-serif;
+    font-family: "Chalkboard", sans-serif;
     font-size: 36px;
-    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.main_card{
+    margin: 40px auto;
+    padding: 24px;
+    background: #ffffff;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .description {
@@ -99,6 +109,21 @@ h2 {
     border-radius: 12px;
     text-align: left;
     line-height: 1.6;
+}
+
+.event {
+    background: rgba(255, 235, 205, 0.8);
+    border-left: 5px solid #8B4513;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.event_title{
+    display: flex;
+    justify-content: center;  /* по горизонтали */
 }
 
 .welcome ul {
