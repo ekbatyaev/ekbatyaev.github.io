@@ -1,5 +1,5 @@
 // Ждем полной загрузки страницы
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   // === ПЕРЕМЕННЫЕ ===
   const changeTextBtn = document.getElementById("changeTextBtn");
   const messageElement = document.getElementById("message");
