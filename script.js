@@ -133,4 +133,29 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+  // === ГАЛЕРЕЯ ФОТОГРАФИЙ МЕРОПРИЯТИЙ ===
+  document.querySelectorAll('.gallery').forEach(gallery => {
+    const photos = gallery.querySelectorAll('.gallery-photo');
+    const btnPrev = gallery.querySelector('.gallery-prev');
+    const btnNext = gallery.querySelector('.gallery-next');
+    let current = 0;
+
+    function showPhoto(index) {
+      photos.forEach((photo, i) => {
+        photo.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    btnPrev.addEventListener('click', () => {
+      current = (current === 0) ? photos.length - 1 : current - 1;
+      showPhoto(current);
+    });
+
+    btnNext.addEventListener('click', () => {
+      current = (current === photos.length - 1) ? 0 : current + 1;
+      showPhoto(current);
+    });
+
+    showPhoto(current);
+  });
 });
